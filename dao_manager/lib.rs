@@ -188,6 +188,7 @@ mod dao_manager {
             }
         }
         /// get the category of dao
+        #[ink(message)]
         pub fn get_dao_category(&mut self) -> String {
             self.category.clone()
         }
